@@ -1,0 +1,73 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Event Handling Section -->
+        <section class="event-section">
+            <h2>🎈 Event Playground</h2>
+            <button id="clickBtn">Click Me!</button>
+            <div id="hoverBox" class="box">Hover Over Me</div>
+            <div id="keyDisplay">Press any key...</div>
+            <div id="secretArea" class="box">Double-click for magic 🪄</div>
+        </section>
+
+        <!-- Interactive Elements -->
+        <section class="interactive-section">
+            <h2>🎮 Interactive Components</h2>
+            <button id="colorChanger" class="color-btn">Change My Color</button>
+            
+            <div class="gallery">
+                <div class="slides">
+                    <img src="https://picsum.photos/300/200?1" class="active">
+                    <img src="https://picsum.photos/300/200?2">
+                    <img src="https://picsum.photos/300/200?3">
+                </div>
+                <button id="prevBtn">←</button>
+                <button id="nextBtn">→</button>
+            </div>
+
+            <div class="tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active">Tab 1</button>
+                    <button class="tab-btn">Tab 2</button>
+                    <button class="tab-btn">Tab 3</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active">Content 1</div>
+                    <div class="tab-pane">Content 2</div>
+                    <div class="tab-pane">Content 3</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation -->
+        <section class="form-section">
+            <h2>📋 Form Validation</h2>
+            <form id="validationForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Name">
+                    <div class="error" id="nameError"></div>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email">
+                    <div class="error" id="emailError"></div>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password">
+                    <div class="error" id="passwordError"></div>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
